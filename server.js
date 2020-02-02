@@ -10,7 +10,7 @@ const helmet = require("helmet");
 const vehicleRouter = require("./routes/vehicles");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 const URI = process.env.MONGODB_URI || process.env.DB_DEV;
 
